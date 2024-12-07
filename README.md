@@ -1,6 +1,6 @@
 
-# Quiz System Project
-
+# Impact of Object-Oriented Design Patterns on Application Performance: Memory, CPU, and Response Time Analysis
+ 
 ## Overview
 This is a standalone Java application implementing an online quiz system using four key object-oriented design patterns:
 - **Singleton**: Centralized question bank and scoring system.
@@ -59,6 +59,24 @@ This is a standalone Java application implementing an online quiz system using f
 
 ## JVM Warm-up
 The application includes a JVM warm-up phase to stabilize performance metrics by minimizing Just-In-Time (JIT) optimizations.
+
+### Prerequisites
+1. **Java Development Kit (JDK)**:
+   - Ensure JDK 17 or higher is installed. Check by running:
+     ```bash
+     java -version
+     ```
+     If not installed, download from [Oracle JDK](https://www.oracle.com/java/technologies/javase-downloads.html).
+
+2. **Gradle**:
+   - This project uses the Gradle wrapper, so no additional Gradle installation is required.
+
+3. **Environment Setup**:
+   - Clone the repository:
+     ```bash
+     git clone https://github.com/shsr2588/OOAD-Online-Quiz-System.git
+     cd OOAD-Online-Quiz-System
+     ```
 
 ## Compiling and Running the Application
 To compile and run the application:
