@@ -1,4 +1,4 @@
-package quizsystem.decorator;
+package org.quizsystem.decorator;
 
 // Concrete Component
 public class BasicQuiz implements QuizFeature {

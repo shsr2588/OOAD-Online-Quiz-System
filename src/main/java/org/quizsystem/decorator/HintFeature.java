@@ -1,4 +1,4 @@
-package quizsystem.decorator;
+package org.quizsystem.decorator;
 
 public class HintFeature extends QuizDecorator {
     public HintFeature(QuizFeature quizFeature) {

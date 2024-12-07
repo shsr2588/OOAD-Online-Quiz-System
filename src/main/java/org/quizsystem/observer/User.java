@@ -1,4 +1,4 @@
-package quizsystem.observer;
+package org.quizsystem.observer;
 
 // Concrete Observer
 public class User implements Observer {

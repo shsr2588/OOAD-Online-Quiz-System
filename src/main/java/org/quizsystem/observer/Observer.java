@@ -1,8 +1,5 @@
 
-package quizsystem.observer;
-
-import java.util.ArrayList;
-import java.util.List;
+package org.quizsystem.observer;
 
 // Observer Interface
 public interface Observer {

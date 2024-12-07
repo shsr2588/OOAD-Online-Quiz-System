@@ -1,4 +1,4 @@
-package quizsystem.core;
+package org.quizsystem.core;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.MemoryMXBean;

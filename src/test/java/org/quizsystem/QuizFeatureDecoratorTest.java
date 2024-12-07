@@ -1,6 +1,9 @@
-package java.quizsystem;// QuizFeatureDecoratorTest.java
+package org.quizsystem;// QuizFeatureDecoratorTest.java
 import org.junit.jupiter.api.Test;
-import quizsystem.decorator.*;
+import org.quizsystem.decorator.BasicQuiz;
+import org.quizsystem.decorator.HintFeature;
+import org.quizsystem.decorator.QuizFeature;
+import org.quizsystem.decorator.TimerFeature;
 
 class QuizFeatureDecoratorTest {
 

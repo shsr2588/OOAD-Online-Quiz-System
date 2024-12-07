@@ -1,6 +1,6 @@
-package java.quizsystem;// QuestionBankSingletonTest.java
+package org.quizsystem;// QuestionBankSingletonTest.java
 import org.junit.jupiter.api.Test;
-import quizsystem.singleton.QuestionBank;
+import org.quizsystem.singleton.QuestionBank;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -19,4 +19,23 @@ class QuestionBankSingletonTest {
         QuestionBank eager2 = QuestionBank.getEagerInstance();
         assertSame(eager1, eager2, "Eager Singleton instances should be the same");
     }
+
+    @Test
+    void testGetInitializationTypeEager() {
+        // Get the eager singleton instance
+        QuestionBank eagerInstance = QuestionBank.getEagerInstance();
+        // Verify the initialization type
+        assertEquals("Eager", eagerInstance.getInitializationType(),
+                "Expected initialization type to be 'Eager'");
+    }
+
+    @Test
+    void testGetInitializationTypeLazy() {
+        // Get the lazy singleton instance
+        QuestionBank lazyInstance = QuestionBank.getLazyInstance();
+        // Verify the initialization type
+        assertEquals("Lazy", lazyInstance.getInitializationType(),
+                "Expected initialization type to be 'Lazy'");
+    }
+
 }

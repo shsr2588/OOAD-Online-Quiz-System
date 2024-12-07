@@ -1,4 +1,4 @@
-package quizsystem.decorator;
+package org.quizsystem.decorator;
 
 // Concrete Decorators
 public class TimerFeature extends QuizDecorator {

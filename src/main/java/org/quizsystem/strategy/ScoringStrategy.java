@@ -1,4 +1,4 @@
-package quizsystem.strategy;
+package org.quizsystem.strategy;
 
 // Strategy Interface
 public interface ScoringStrategy {

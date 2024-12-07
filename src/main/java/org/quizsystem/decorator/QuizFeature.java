@@ -1,5 +1,5 @@
 
-package quizsystem.decorator;
+package org.quizsystem.decorator;
 
 // Base Component
 public interface QuizFeature {

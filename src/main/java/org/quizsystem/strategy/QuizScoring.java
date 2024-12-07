@@ -1,5 +1,5 @@
 
-package quizsystem.strategy;
+package org.quizsystem.strategy;
 
 // Context
 public class QuizScoring {

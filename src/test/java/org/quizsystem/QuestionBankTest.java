@@ -1,6 +1,6 @@
-package java.quizsystem;// QuestionBankTest.java
+package org.quizsystem;// QuestionBankTest.java
 import org.junit.jupiter.api.Test;
-import quizsystem.singleton.QuestionBank;
+import org.quizsystem.singleton.QuestionBank;
 
 import static org.junit.jupiter.api.Assertions.*;
 

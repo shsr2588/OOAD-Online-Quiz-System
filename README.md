@@ -29,32 +29,9 @@ This is a standalone Java application implementing an online quiz system using f
    - Measures memory usage, CPU cycles, and response time.
    - Includes JVM warm-up to ensure consistent results.
 
-## Project Structure
-```
-src/main/java/quizsystem
-├── core
-│   ├── BenchmarkingTools.java
-│   ├── QuizSystemDemo.java
-├── singleton
-│   ├── QuestionBank.java
-├── observer
-│   ├── Observer.java
-├── strategy
-│   ├── QuizScoring.java
-├── decorator
-│   ├── QuizFeature.java
-```
 
-## How to Run
-1. Ensure Java (JDK 11 or higher) is installed.
-2. Compile the project:
-   ```
-   javac src/main/java/quizsystem/**/*.java -d out
-   ```
-3. Run the main demo class:
-   ```
-   java -cp out quizsystem.core.QuizSystemDemo
-   ```
+## TestCoverage (100%)
+![code_coverage.png](src/main/resources/code_coverage.png)
 
 ## Benchmarking Methodology
 ### Singleton Pattern

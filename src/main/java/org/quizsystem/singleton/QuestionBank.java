@@ -1,5 +1,5 @@
 
-package quizsystem.singleton;
+package org.quizsystem.singleton;
 
 // Singleton with lazy and eager initialization
 public class QuestionBank {

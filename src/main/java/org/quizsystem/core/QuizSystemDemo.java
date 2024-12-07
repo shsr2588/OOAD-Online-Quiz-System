@@ -1,8 +1,12 @@
-package quizsystem.core;
+package org.quizsystem.core;
 
-import quizsystem.singleton.QuestionBank;
-import quizsystem.observer.*;
-import quizsystem.strategy.*;
+import org.quizsystem.observer.QuizNotifier;
+import org.quizsystem.observer.User;
+import org.quizsystem.singleton.QuestionBank;
+import org.quizsystem.strategy.EasyScoringStrategy;
+import org.quizsystem.strategy.HardScoringStrategy;
+import org.quizsystem.strategy.MediumScoringStrategy;
+import org.quizsystem.strategy.QuizScoring;
 
 public class QuizSystemDemo {
     public static void main(String[] args) {

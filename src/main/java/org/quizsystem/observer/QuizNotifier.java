@@ -1,4 +1,4 @@
-package quizsystem.observer;
+package org.quizsystem.observer;
 
 import java.util.ArrayList;
 import java.util.List;

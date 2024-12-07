@@ -1,8 +1,8 @@
-package java.quizsystem;// ScoringStrategyTest.java
+package org.quizsystem;// ScoringStrategyTest.java
 import org.junit.jupiter.api.Test;
-import quizsystem.strategy.EasyScoringStrategy;
-import quizsystem.strategy.MediumScoringStrategy;
-import quizsystem.strategy.HardScoringStrategy;
+import org.quizsystem.strategy.EasyScoringStrategy;
+import org.quizsystem.strategy.MediumScoringStrategy;
+import org.quizsystem.strategy.HardScoringStrategy;
 
 import static org.junit.jupiter.api.Assertions.*;
 

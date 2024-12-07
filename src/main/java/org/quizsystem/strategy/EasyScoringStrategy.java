@@ -1,4 +1,4 @@
-package quizsystem.strategy;
+package org.quizsystem.strategy;
 
 // Concrete Strategies
 public class EasyScoringStrategy implements ScoringStrategy {

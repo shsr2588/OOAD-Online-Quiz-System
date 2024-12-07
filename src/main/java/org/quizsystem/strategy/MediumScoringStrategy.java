@@ -1,4 +1,4 @@
-package quizsystem.strategy;
+package org.quizsystem.strategy;
 
 public class MediumScoringStrategy implements ScoringStrategy {
     @Override

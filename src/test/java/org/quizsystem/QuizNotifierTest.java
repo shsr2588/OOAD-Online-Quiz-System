@@ -1,7 +1,7 @@
-package java.quizsystem;// QuizNotifierTest.java
+package org.quizsystem;// QuizNotifierTest.java
 import org.junit.jupiter.api.Test;
-import quizsystem.observer.QuizNotifier;
-import quizsystem.observer.Observer;
+import org.quizsystem.observer.QuizNotifier;
+import org.quizsystem.observer.Observer;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -16,6 +16,41 @@ class QuizNotifierTest {
         assertEquals("Hello Observers!", observer.getLastMessage());
     }
 
+    @Test
+    void testRemoveObserver() {
+        // Create a QuizNotifier instance
+        QuizNotifier notifier = new QuizNotifier();
+
+        // Create two observers
+        TestObserver observer1 = new TestObserver();
+        TestObserver observer2 = new TestObserver();
+
+        // Register the observers
+        notifier.registerObserver(observer1);
+        notifier.registerObserver(observer2);
+
+        // Ensure both observers are added
+        notifier.setMessage("Initial Message");
+        assertEquals("Initial Message", observer1.getLastMessage());
+        assertEquals("Initial Message", observer2.getLastMessage());
+
+        // Remove observer1
+        notifier.removeObserver(observer1);
+
+        // Reset observer1's last message to track new updates
+        observer1.resetMessage();
+
+        // Change the message
+        notifier.setMessage("Updated Message");
+
+        // Verify observer1 does not receive updates after removal
+        assertNull(observer1.getLastMessage(), "Observer1 should not receive updates after removal");
+
+        // Verify observer2 still receives updates
+        assertEquals("Updated Message", observer2.getLastMessage(), "Observer2 should still receive updates");
+    }
+
+
     private static class TestObserver implements Observer {
         private String lastMessage;
 
@@ -26,6 +61,10 @@ class QuizNotifierTest {
 
         public String getLastMessage() {
             return lastMessage;
+        }
+
+        public void resetMessage() {
+            this.lastMessage = null;
         }
     }
 }
