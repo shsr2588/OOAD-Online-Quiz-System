@@ -60,4 +60,18 @@ This is a standalone Java application implementing an online quiz system using f
 ## JVM Warm-up
 The application includes a JVM warm-up phase to stabilize performance metrics by minimizing Just-In-Time (JIT) optimizations.
 
+## Compiling and Running the Application
+To compile and run the application:
+
+1. **Clean and Build**:
+   ```bash
+   ./gradlew clean build
+
+2. **Run the Application**:
+   ```bash
+   ./gradlew run
+
+3. **Run Tests**
+    ```bash
+   ./gradlew test
 ---
